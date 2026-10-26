@@ -1,1 +1,1 @@
-export { default, masters, call } from "./v2/index.js";
+export { default, create, delete } from "./v2/index.js";

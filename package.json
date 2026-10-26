@@ -1,6 +1,6 @@
 {
     "name": "tally-import",
-    "version": "1.2.2",
+    "version": "1.2.3",
     "description": "A clean, typed JavaScript client for querying Tally and receiving schema-transformed, normalized JSON.",
     "homepage": "https://keshavsoft.github.io/tally-import/",
     "repository": {
@@ -50,8 +50,7 @@
     "publishConfig": {
         "access": "public"
     },
-    "devDependencies": {
-    },
+    "devDependencies": {},
     "dependencies": {
         "tally-http-json": "^1.6.1"
     }

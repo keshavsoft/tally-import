@@ -1,7 +1,7 @@
-import { masters } from "../../../src/index.js";
+import { create } from "../../../src/index.js";
 
 const run = async () => {
-    const res = await masters("aa6");
+    const res = await create("aa6");
 
     console.log("Sample:", res);
 };
