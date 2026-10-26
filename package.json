@@ -1,0 +1,59 @@
+{
+    "name": "tally-import",
+    "version": "1.2.1",
+    "description": "A clean, typed JavaScript client for querying Tally and receiving schema-transformed, normalized JSON.",
+    "homepage": "https://keshavsoft.github.io/tally-import/",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/keshavsoft/tally-import.git"
+    },
+    "bugs": {
+        "url": "https://github.com/keshavsoft/tally-import/issues"
+    },
+    "type": "module",
+    "exports": {
+        ".": {
+            "types": "./src/index.d.ts",
+            "import": "./src/index.js",
+            "default": "./src/index.js"
+        },
+        "./package.json": "./package.json"
+    },
+    "bin": {
+        "tally-import": "./bin/tally-import.js"
+    },
+    "main": "./src/index.js",
+    "types": "./src/index.d.ts",
+    "files": [
+        "bin",
+        "src",
+        "docs",
+        "README.md",
+        "CHANGELOG.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "generate:dts": "create-intellisense",
+        "test": "node test/v9/company.js && node test/v9/units.js && node test/v9/stockItems.js && node test/v9/vouchers/sales.js",
+        "test:v9": "node test/v9/company.js && node test/v9/units.js && node test/v9/stockItems.js && node test/v9/vouchers/sales.js"
+    },
+    "keywords": [
+        "tally",
+        "tdl",
+        "api",
+        "accounting"
+    ],
+    "license": "MIT",
+    "engines": {
+        "node": ">=20.10"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "devDependencies": {
+        "create-intellisense": "^1.2.1"
+    },
+    "dependencies": {
+        "tally-http-json": "^1.6.1"
+    }
+}
